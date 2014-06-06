@@ -38,7 +38,7 @@ def compare_words(word1, word2):
     return comparison
 
 def main(word_length):
-    words = open("enable1.txt", "r", encoding="utf-8")
+    words = open("../enable1.txt", "r", encoding="utf-8")
     # Get the length of the file
     num_of_words = get_num_of_words()
     words = [word for word in yield_words(words, num_of_words, word_length + 1)]
