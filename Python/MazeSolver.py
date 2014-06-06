@@ -86,7 +86,7 @@ def can_see_end(view: list) -> bool:
     return "E" in view
 
 def make_choice(x: int, y: int, maze: list) -> tuple:
-    index_to_movement = {0: (0, 1), 1: (1, 0), 2: (0, -1), 3: (-1, 0)}
+    index_to_movement = {2: (0, 1), 0: (1, 0), 3: (0, -1), 1: (-1, 0)}
     spaces = look_around(x, y, maze)
     # Lay down a breadcrumb
     maze[y][x] = PATH
